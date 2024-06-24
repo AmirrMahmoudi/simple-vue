@@ -10,7 +10,12 @@
           Blanditiis quae delectus, et quibusdam temporibus adipisci? Laborum
           asperiores quod laudantium, nobis quos sequi temporibus culpa.
         </p>
-        <router-link class="btn btn-dark" :to="{name:'users'}">Users</router-link>
+        <router-link class="btn btn-dark" :to="{ name: 'users' }"
+          >Users</router-link
+        >
+        <router-link class="btn btn-light ms-3" :to="{ name: 'posts' }"
+          >Posts</router-link
+        >
       </div>
     </div>
   </div>
