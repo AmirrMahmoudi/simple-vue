@@ -1,9 +1,9 @@
 <template>
   <!-- <h1>{{ users }}</h1> -->
 
-  <di v-if="loading" class="spinner-border" role="status">
+  <div v-if="loading" class="spinner-border" role="status">
     <span class="visually-hidden">Loading...</span>
-  </di>
+  </div>
 
   <div v-else class="col-md-5">
     <div class="card">
@@ -17,7 +17,9 @@
       </ul>
       <div class="card-footer">
         <button class="btn btn-sm btn-danger me-4">Delete</button>
-        <button class="btn btn-sm btn-dark">Edit</button>
+        <router-link :to="{ name: 'editPost', params: { id: post.id } }">
+          <button class="btn btn-sm btn-dark">Edit</button>
+        </router-link>
       </div>
     </div>
   </div>
