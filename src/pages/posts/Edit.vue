@@ -57,7 +57,6 @@ export default {
         })
 
         .then(function () {
-          loading.value = false;
           Swal.fire({
             title: "Thanks!",
             text: "Post update successfully",
