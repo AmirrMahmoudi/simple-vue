@@ -10,6 +10,7 @@
           Blanditiis quae delectus, et quibusdam temporibus adipisci? Laborum
           asperiores quod laudantium, nobis quos sequi temporibus culpa.
         </p>
+        <router-link class="btn btn-dark" :to="{name:'users'}">Users</router-link>
       </div>
     </div>
   </div>
